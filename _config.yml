@@ -1,0 +1,56 @@
+title: "Codice Artificiale"
+email: info@codiceartificiale.it
+description: >-
+  Formazione, consulenza e divulgazione sull'Intelligenza Artificiale
+baseurl: "" 
+url: "https://codiceartificiale.it"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+# Permalink per i post
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-include-cache
+
+author:
+  name: "Codice Artificiale"
+  avatar: "/assets/images/logo-mini.png"
+  bio: "Formazione, consulenza e divulgazione sull'Intelligenza Artificiale"
+  links:
+    - label: "ArtificialCode 🇬🇧"
+      icon: "fa fa-envelope"
+      url: "https://ArtificialCode.substack.com/"
+    - label: "CodiceArtificiale 🇮🇹"
+      icon: "fa fa-envelope"
+      url: "https://codiceartificiale.substack.com/"
+    - label: "Aladino Digitale 🇮🇹"
+      icon: "fas fa-blog"
+      url: "https://aladinodigitale.it/"
+    - label: "Risorse Artificiali 🇮🇹"
+      icon: "fas fa-headphones"
+      url: "https://risorseartificiali.com"
+
+# Abilita sezione autore nella homepage
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: single
+      author_profile: true
+#  - scope:
+#      path: ""
+#      type: "posts"
+#    values:
+#      layout: single
+#      author_profile: true
+#      share: true   # Abilita i tasti di condivisione social sotto gli articoli
+#      comments: true # Predispone per i commenti (se li userai)
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+atom_feed:
+  hide: true
